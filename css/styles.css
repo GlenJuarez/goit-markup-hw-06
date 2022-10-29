@@ -798,8 +798,9 @@ a:hover {
 }
 
 .modal__container-information-conditions > input {
-  margin-right: 8.38px;
-  margin-top: 4px;
+  position: relative;
+  left: 11px;
+  top: 4px;
   background: #212121;
   width: 16px;
   height: 15px;
@@ -828,9 +829,7 @@ a:hover {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .icon-check {
-  
   margin-right: 8.38px;
   margin-top: 6px;
   width: 13px;
@@ -839,10 +838,73 @@ a:hover {
   border-radius: 4px;
 }
 
-.modal__checked:checked+.icon-check {
+.modal__checked:checked + .icon-check {
+  background-color: #2196f3;
+  background-image: url(../images/checkmanual.svg);
   border-color: transparent;
-    background-image: url(../images/checkmanual.svg);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-size: contain;
-  background-origin: border-box;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__subcription {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__suscription-info {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 44px;
+}
+
+.footer__email {
+  padding-left: 44px;
+  display: flex;
+}
+
+.footer__email > input {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer_button {
+  display: flex;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  border-color: transparent;
+  align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+cursor: pointer;
+padding-left: 39px;
+
+
+}
+
+
+.footer_icon{
+  
+  margin-left: 20px;
+  
+  
 }
