@@ -721,7 +721,6 @@ a:hover {
   color: #757575;
   margin-bottom: 10px;
   text-align: left;
-  
 }
 
 .modal__container-information > input {
@@ -736,9 +735,8 @@ a:hover {
   cursor: pointer;
 }
 
-.modal__container-information > :hover
-{
-  border: 1px solid #2196F3;
+.modal__container-information > :hover {
+  border: 1px solid #2196f3;
 }
 
 .modal__container-information > svg {
@@ -775,12 +773,9 @@ a:hover {
   cursor: pointer;
 }
 
-.modal__container-information-comments>textarea:hover
-{
-  border: 1px solid #2196F3;
+.modal__container-information-comments > textarea:hover {
+  border: 1px solid #2196f3;
 }
-
-
 
 .modal__container-information-conditions {
   display: flex;
@@ -803,35 +798,50 @@ a:hover {
 }
 
 .modal__container-information-conditions > input {
-
   margin-right: 8.38px;
   margin-top: 4px;
   background: #212121;
   width: 16px;
   height: 15px;
-
-  
+  visibility: hidden;
 }
 
-.buttonuser{
-  background-color: #2196F3;
+.buttonuser {
+  background-color: #2196f3;
   width: 200px;
-height: 50px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-color:  #FFFFFF;;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-padding: 10px 75px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-margin-top: 5px;
-margin-bottom: 40px;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px 75px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-top: 5px;
+  margin-bottom: 40px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.icon-check {
+  
+  margin-right: 8.38px;
+  margin-top: 6px;
+  width: 13px;
+  height: 12px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+
+.modal__checked:checked+.icon-check {
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url(../images/checkmanual.svg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

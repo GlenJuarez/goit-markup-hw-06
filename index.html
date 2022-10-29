@@ -4,14 +4,12 @@
 <head>
   <meta charset="utf-8" lang="es" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/styles.css" />
-
+  <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css" />
-
+  <link rel="stylesheet" href="css/styles.css" />
   <title> Web Studio Project </title>
 </head>
 
@@ -92,12 +90,12 @@
               </label>
 
               <label class="modal__container-information-conditions">
-                <input type="checkbox" name="conditions" value="conditions" />
-                  <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y condiciones
-                     </p>
+                <input class="modal__checked" type="checkbox" name="conditions" value="conditions" />
+
+                <span class="icon-check"></span>
+                <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y condiciones
+                </p>
               </label>
-
-
               <button class="buttonuser" type="submit">Enviar</button>
             </form>
           </div>
@@ -395,14 +393,10 @@
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </li>
-
         </ul>
       </section>
     </div>
   </footer>
-
-
-
   <script src="./js/modal.js"></script>
 </body>
 
